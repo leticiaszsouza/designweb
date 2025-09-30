@@ -1,0 +1,53 @@
+
+.menu a {
+  color: #9C9C9C;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.menu a:hover {
+  color: #62BA1B;
+}
+.menu-social a {
+  color:#9C9C9C;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+.menu-social a:hover {
+  color: #00c853;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.container h3 {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin: 0.5rem 0 1rem;
+}
+.container p {
+  margin-bottom: 1.5rem;
+}
+
+.last-jobs h4 {
+  color: #aaa;
+  margin-bottom: 0rem;
+  padding: 0rem;
+}
+
+.btn,
+button {
+  background: #62BA1B;
+  border: none;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover,
+button:hover {
+  background: #009624;
+}
+
