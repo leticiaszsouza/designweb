@@ -1,12 +1,15 @@
 @media (min-width: 668px) {
-    .menu-toggle {
-    display: none; 
+  
+  .menu-botao{
+    display: none;
   }
-    .menu-navegacao {
+
+  .menu-navegacao {
     display: flex; 
     gap: 2rem;
   }
-    .menu-social {
+
+  .menu-social {
     display: flex;
     gap: 1rem;
   }
@@ -15,7 +18,7 @@
 @media (max-width: 667.98px) {
     .header {
     width: 100%;       
-    padding: 3 3rem;     
+    padding: 28px 24px;     
     box-sizing: border-box;
   }
      .sobre {
@@ -24,27 +27,27 @@
     align-items: center;     
     gap: 2rem;               
   }
-    .sobre .right {
+    .sobre .direita {
     order: -1;             
     text-align: center;     
   }
 
-    .sobre .left {
+    .sobre .esquerda {
     order: 0;               
     text-align: left;       
     width: 100%;           
   }
 
-    .sobre .right img {
-    max-width: 250px;       
+    .sobre .direita img {
+    max-width: 300px;       
     height: auto;
-    border-radius: 50%;      
+    border-radius: 50%;     
   }
 
-    .menu-toggle {
+    .menu-botao {
     display: flex;      
     align-items: center;
-    gap: 0.5rem;
+    gap: 16px;
     font-size: 1rem;
     order: 2;           
   }
@@ -55,7 +58,7 @@
 
     .menu-social {
     display: flex;
-    gap: 1rem;
+    gap: 25px;
     order: 1;    
     flex-direction: row;        
   }
@@ -65,16 +68,23 @@
     justify-content: space-between;
     align-items: center;
   }
-}
-    
-    .job-list {
+
+  .nav-mobile{
+    display: none;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    background: #1B1B1B;
+    width: 200px;
+  }
+    .trabalhos-lista {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;  
         gap: 1rem;          
     }
 
-    .btn {
+    .botao {
     display: block;      
     width: 100%;       
     text-align: center;  
@@ -82,4 +92,6 @@
 
     .container {
         padding: 2rem 3rem 6rem 3rem;
+        gap: 45.5px;
     }
+  }

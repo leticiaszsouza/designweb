@@ -8,18 +8,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header class="header">
-  <nav class="nav">
-    <button class="menu-toggle" aria-label="Menu">
-      <i class="fa-solid fa-bars"></i>
-      Menu
-    </button>
+    <nav class="nav">
+      <input type="checkbox" id="menu-hamburguer">
+      <label for="menu-hamburguer" class="menu-botao">
+        <i class="fa-solid fa-bars"></i> Menu
+        <i class="fa-solid fa-xmark"></i>
+      </label>
+        <div class="nav-mobile">
+        <a href="#">Estudo de Casos</a>
+        <a href="#">Trabalhos</a>
+        <a href="#">Contato</a>
+    </div>
+
     <ul class="menu menu-navegacao">
-      <li><a href="#">Estudos de caso</a></li>
+      <li><a href="#">Estudos de Casos</a></li>
       <li><a href="#">Trabalhos</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
+
     <ul class="menu menu-social">
       <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
       <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
@@ -27,26 +36,28 @@
     </ul>
   </nav>
 </header>
+
   <main>
     <section class="container sobre">
-      <div class="left">
+      <div class="esquerda">
         <h1>Leticia Maciel</h1>
         <h3>UX / Dev Front-end</h3>
-        <p>
-          Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.
-        </p>
-        <button class="btn">
-          Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i>
+        <p> Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito. </p>
+
+        <button class="botao">
+          <span> Vamos trabalhar juntos </span><i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
-      <figure class="right">
+
+      <figure class="direita">
         <img src="assets/img/perfil.png" alt="Foto de Leticia Maciel">
       </figure>
     </section>
 
-    <section class="container last-jobs">
+    <section class="container trabalhos">
       <h4>Trabalhou em:</h4>
-      <ul class="job-list">
+
+      <ul class="trabalhos-lista">
         <li><img src="assets/img/img-job-1.svg" alt=""></li>
         <li><img src="assets/img/img-job-2.svg" alt=""></li>
         <li><img src="assets/img/img-job-3.svg" alt=""></li>
