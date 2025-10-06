@@ -1,0 +1,87 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background: #080808;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.header {
+  border-radius: 6px;
+}
+
+.menu a {
+  color: #9C9C9C;
+  text-decoration: none;
+  font-family: "IBM Plex Mono" monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  transition: color 0.3s;
+}
+
+.menu-toggle {
+  color: #9C9C9C;
+  background: none;
+  border: none;
+}
+
+.menu-social a {
+  color: #9C9C9C;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.container h1 {
+  color: #FFF;
+  font-family: "Releway", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container h3 {
+  color: #FFF;
+  font-family: "Raleway" sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+.container p {
+  color: #9C9C9C;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.last-jobs h4 {
+  color: #FFF;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.job-list {
+  list-style-type: none;
+  border: 1px;
+}
+
+.job-list img {
+  max-width: 120px;
+}
+
+.container .btn {
+  border-radius: 4px;
+  color: #FFF;
+  border: 1px solid #62BA1B;
+  background: #3F8E00;
+  box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+}/*# sourceMappingURL=design.css.map */
