@@ -1,70 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Leticia Maciel</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hierarquia Tipografia</title>
 </head>
+<body class="bg-gray-50 p-10">
 
-<body>
-  <header class="header">
-    <nav class="nav">
-      <input type="checkbox" id="menu-hamburguer">
-      <label for="menu-hamburguer" class="menu-botao">
-        <i class="fa-solid fa-bars"></i> Menu
-        <i class="fa-solid fa-xmark"></i>
-      </label>
-        <div class="nav-mobile">
-        <a href="#">Estudo de Casos</a>
-        <a href="#">Trabalhos</a>
-        <a href="#">Contato</a>
-    </div>
+    <main class="bg-white shadow-lg rounded-lg max-w-lg mx-auto p-10">
+      
+      <h1 class="text-4xl font-bold text-gray-900 mb-4 leading-tight tracking-tight">
+        O que é Tailwind CSS?
+      </h1>
 
-    <ul class="menu menu-navegacao">
-      <li><a href="#">Estudos de Casos</a></li>
-      <li><a href="#">Trabalhos</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-gray-700 mb-6 leading-tight tracking-normal">
+        Uma abordagem utilitária para estilizar interfaces
+      </h2>
 
-    <ul class="menu menu-social">
-      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-    </ul>
-  </nav>
-</header>
+      <p class="text-base text-gray-600 mb-4 leading-relaxed">
+        Tailwind CSS é um framework CSS (Cascading Style Sheets) com classes predefinidas que você pode usar para construir e projetar páginas web diretamente na sua marcação. Ele permite que você escreva CSS em seu HTML na forma de classes pré-definidas.
+      </p>
 
-  <main>
-    <section class="container sobre">
-      <div class="esquerda">
-        <h1>Leticia Maciel</h1>
-        <h3>UX / Dev Front-end</h3>
-        <p> Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito. </p>
-
-        <button class="botao">
-          <span> Vamos trabalhar juntos </span><i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-
-      <figure class="direita">
-        <img src="assets/img/perfil.png" alt="Foto de Leticia Maciel">
-      </figure>
-    </section>
-
-    <section class="container trabalhos">
-      <h4>Trabalhou em:</h4>
-
-      <ul class="trabalhos-lista">
-        <li><img src="assets/img/img-job-1.svg" alt=""></li>
-        <li><img src="assets/img/img-job-2.svg" alt=""></li>
-        <li><img src="assets/img/img-job-3.svg" alt=""></li>
-        <li><img src="assets/img/img-job-4.svg" alt=""></li>
-        <li><img src="assets/img/img-job-5.svg" alt=""></li>
-      </ul>
-    </section>
-  </main>
+      <p class="text-base text-gray-600 leading-relaxed">
+        Essa abordagem torna o desenvolvimento mais ágil, facilita a manutenção do código e promove consistência visual em todo o projeto. Além disso, Tailwind é altamente customizável, permitindo que você adapte o design às necessidades da sua marca ou produto.
+      </p>
+    </main>
 </body>
 </html>
+
+<!--
+  Decisões visuais:
+- Título: bold, leading-tight, tracking-tight, text-4xl, e text-gray-900 -> texto bem destacado e com contraste.
+- Subtítulo: semibold, leading-tight, tracking-relaxed ,text-2xl e text-gray-700 -> menor peso para diferenciar do título.
+- Parágrafos: leading-relaxed, text-base e text-gray-600 -> texto suave, levemente espaçado e num tamanho padrão.
+- Espaçamento: mb-4, mb-6, p-10.
+- Bloco centralizado com max-w-lg, shadow-lg e rounded-lg para criar um bloco limpo mas com destaque.
+- Fundo: bg-gray-50 -> tom suave para o foco se manter no conteúdo.
+-->
