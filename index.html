@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Hierarquia Tipografia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Micro Layouts e Alinhamento Consistente</title>
 </head>
-<body class="bg-gray-50 p-10">
+<body class="bg-gray-50">
+  <section class="flex flex-col md:flex-row items-center justify-center min-h-screen border-t shadow-inner bg-white py-16 px-6 gap-20">
 
-    <main class="bg-white shadow-lg rounded-lg max-w-lg mx-auto p-10">
-      
-      <h1 class="text-4xl font-bold text-gray-900 mb-4 leading-tight tracking-tight">
+    <div class="flex-1 space-y-6 text-center md:text-left leading-6">
+      <h1 class="text-4xl font-bold text-gray-900 tracking-tight">
         O que é Tailwind CSS?
       </h1>
 
-      <h2 class="text-2xl font-semibold text-gray-700 mb-6 leading-tight tracking-normal">
+      <h2 class="text-2xl font-semibold text-gray-600">
         Uma abordagem utilitária para estilizar interfaces
       </h2>
 
-      <p class="text-base text-gray-600 mb-4 leading-relaxed">
-        Tailwind CSS é um framework CSS (Cascading Style Sheets) com classes predefinidas que você pode usar para construir e projetar páginas web diretamente na sua marcação. Ele permite que você escreva CSS em seu HTML na forma de classes pré-definidas.
-      </p>
+      <p class=" text-gray-700">
+          Tailwind CSS é um framework CSS (Cascading Style Sheets) com classes predefinidas que você pode usar para construir e projetar páginas web diretamente na sua marcação. Ele permite que você escreva CSS em seu HTML na forma de classes pré-definidas.
+          Essa abordagem torna o desenvolvimento mais ágil, facilita a manutenção do código e promove consistência visual em todo o projeto. Além disso, Tailwind é altamente customizável, permitindo que você adapte o design às necessidades da sua marca ou produto.
+        </p>
+    </div>
+    <div class="flex-1">
+      <img src="https://picsum.photos/400" alt="Imagem" class="rounded-lg shadow w-full max-w-md mx-auto md:mx-0">
+    </div>
+  </section>
 
-      <p class="text-base text-gray-600 leading-relaxed">
-        Essa abordagem torna o desenvolvimento mais ágil, facilita a manutenção do código e promove consistência visual em todo o projeto. Além disso, Tailwind é altamente customizável, permitindo que você adapte o design às necessidades da sua marca ou produto.
-      </p>
-    </main>
+<!--  A estrutura que usei foi Flex, pois nesse caso o layout é bem simples, contendo apenas dois elementos de igual importância visual separados em duas colunas (texto e imagem). O Grid seria mais útil em um design mais complexo.
+  -->
+
 </body>
 </html>
-
-<!--
-  Decisões visuais:
-- Título: bold, leading-tight, tracking-tight, text-4xl, e text-gray-900 -> texto bem destacado e com contraste.
-- Subtítulo: semibold, leading-tight, tracking-relaxed ,text-2xl e text-gray-700 -> menor peso para diferenciar do título.
-- Parágrafos: leading-relaxed, text-base e text-gray-600 -> texto suave, levemente espaçado e num tamanho padrão.
-- Espaçamento: mb-4, mb-6, p-10.
-- Bloco centralizado com max-w-lg, shadow-lg e rounded-lg para criar um bloco limpo mas com destaque.
-- Fundo: bg-gray-50 -> tom suave para o foco se manter no conteúdo.
--->
