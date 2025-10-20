@@ -5,88 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet" />
+
   <style>
-    body {
-      font-family: 'IBM Plex Mono', monospace;}
-    .raleway {
-      font-family: 'Raleway', sans-serif;}
+    body { font-family: 'IBM Plex Mono', monospace; }
+    .raleway { font-family: 'Raleway', sans-serif; }
   </style>
 </head>
 
 <body class="bg-zinc-950 text-white">
-  <header class="w-full bg-zinc-900 px-6 py-4">
-    <nav class="max-w-4xl mx-auto flex justify-between items-center">
-    
-      
-
+  <header class="bg-zinc-900 px-6 py-4 md:py-6 rounded-b-md mx-auto max-w-6xl">
+    <nav class="flex justify-between items-center w-full" role="navigation">
       <div class="hidden md:flex space-x-6 text-neutral-400">
-        <a href="#" class="hover:text-green-500">Estudos de Casos</a>
-        <a href="#" class="hover:text-green-500">Trabalhos</a>
-        <a href="#" class="hover:text-green-500">Entrar em Contato</a>
+        <a href="#" class="hover:text-green-500 transition">Estudos de Casos</a>
+        <a href="#" class="hover:text-green-500 transition">Trabalhos</a>
+        <a href="#contato" class="hover:text-green-500 transition">Entrar em Contato</a>
       </div>
 
-      <div class="flex items-center gap-4 text-white opacity-30 text-lg ">
-        <a href="#"><i class="fa-brands fa-linkedin-in hover:opacity-70"></i></a>
-        <a href="#"><i class="fa-brands fa-behance hover:opacity-70"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter hover:opacity-70"></i></a>
+    
+      <div class="flex items-center gap-4 text-white opacity-30 text-lg">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in hover:opacity-70"></i></a>
+        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance hover:opacity-70"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter hover:opacity-70"></i></a>
       </div>
 
-      <button id="menu-btn" class="md:hidden text-2xl text-white">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    
+      <button id="menu-btn" class="md:hidden text-2xl justify-end text-neutral-400 text-sm font-normal font-['IBM_Plex_Mono'] tracking-tight" aria-label="Abrir menu"> 
+        <i class="fa-solid fa-bars" id="menu-icon"></i> Menu
       </button>
     </nav>
 
-    <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 px-6 space-y-2">
-      <a href="#" class="text-sm hover:text-green-500">Estudos de Casos</a>
-      <a href="#" class="text-sm hover:text-green-500">Trabalhos</a>
-      <a href="#" class="text-sm hover:text-green-500">Entrar em Contato</a>
+ 
+    <div id="mobile-menu" class="hidden grid grid-cols-1 w-[300px]  mt-4 space-y-2 md:hidden">
+      <a href="#" class="text-sm hover:text-green-500 transition">Estudos de Casos</a>
+      <a href="#" class="text-sm hover:text-green-500 transition">Trabalhos</a>
+      <a href="#contato" class="text-sm hover:text-green-500 transition">Entrar em Contato</a>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-12">
 
+  <main class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-8 items-center">
 
-    <figure class="w-80 h-80 relative order-2">
-      <img class="w-80 h-80 rounded-full absolute" src="img/fotoperfil.png" alt="Leticia Maciel">
+    <figure class="w-72 h-72 relative md:order-2 md:mr-20">
+      <img class="w-72 h-72 rounded-full object-cover absolute" src="img/perfil.png" alt="Foto de Leticia Maciel" />
     </figure>
 
- 
-    <section class="flex-1 flex flex-col gap-7">
+    
+    <section class="flex-1 flex flex-col gap-8 md:ml-20">
 
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-2">
         <h1 class="text-5xl font-bold raleway">Leticia Maciel</h1>
         <h2 class="text-2xl font-light raleway">UX e Dev Front-end</h2>
       </div>
 
-    
-      <p class="text-neutral-400 text-sm leading-snug">
+  
+      <p class="text-neutral-400 self-scretch text-sm leading-relaxed max-w-lg">
         Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.
       </p>
 
-    
-      <a href="#contato" class="bg-lime-700 px-8 py-4 rounded shadow-[0px_8px_30px_rgba(63,142,0,0.5)] outline outline-1 outline-lime-600 text-white text-base font-bold inline-flex items-center gap-2 w-fit hover:bg-lime-800 transition">
+     
+      <button class="bg-lime-700 px-8 py-4 md:px-16 md:py-5 rounded shadow-[0px_8px_30px_rgba(63,142,0,0.5)] outline outline-1 outline-lime-600 text-white text-normal font-semibold inline-flex items-center gap-2 w-fit hover:bg-lime-800 transition">
         Vamos trabalhar juntos
         <i class="fa-solid fa-chevron-right text-sm"></i>
-      </a>
-
+      </button>
     </section>
   </main>
 
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <h4 class="text-lg font-semibold mb-4">Trabalhou em:</h4>
-
-    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-      <li><img src="assets/img/img-job-1.svg" alt="Job 1"></li>
-      <li><img src="assets/img/img-job-2.svg" alt="Job 2"></li>
-      <li><img src="assets/img/img-job-3.svg" alt="Job 3"></li>
-      <li><img src="assets/img/img-job-4.svg" alt="Job 4"></li>
-      <li><img src="assets/img/img-job-5.svg" alt="Job 5"></li>
-    </ul>
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h4 class="text-lg font-normal mb-6">Trabalhou em:</h4>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+      <div><img src="img/img-job-5.svg" alt="Job 1" /></div>
+      <div><img src="img/img-job-4.svg" alt="Job 2" /></div>
+      <div><img src="img/img-job-3.svg" alt="Job 3" /></div>
+      <div><img src="img/img-job-2.svg" alt="Job 4" /></div>
+      <div><img src="img/img-job-1.svg" alt="Job 5" /></div>
+    </div>
   </section>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", () => {
       const btn = document.getElementById('menu-btn');
       const menu = document.getElementById('mobile-menu');
       const icon = document.getElementById('menu-icon');
@@ -96,8 +95,9 @@
         icon.classList.toggle('fa-bars');
         icon.classList.toggle('fa-xmark');
       });
-    });
-  </script>
 
+   
+        });
+  </script>
 </body>
 </html>
