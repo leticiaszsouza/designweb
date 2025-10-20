@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script  src="https://cdn.tailwindcss.com"> </script>
-    <title> Componentização e Reutilização Visual</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'IBM Plex Mono', monospace;}
+    .raleway {
+      font-family: 'Raleway', sans-serif;}
+  </style>
 </head>
-<body class="bg-zinc-950 py-14 px-8">
-    <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="p-6 bg-white rounded shadow hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
-            <h3 class="text-xl font-bold mb-4 text-indigo-900"> Introdução ao Desenvolvimento Web</h3>
-            
-            <p class="text-gray-700 mb-4"> Este curso é a porta de entrada ideal para quem deseja aprender a construir sites e aplicativos web. Com uma abordagem prática e acessível, você aprenderá os fundamentos de HTML, CSS e JavaScript, dominando as tecnologias essenciais para qualquer desenvolvedor front-end. Ao longo das aulas, você criará projetos reais, como landing pages, portfólios e páginas interativas e entenderá como aplicar boas práticas de codificação desde o início. Também abordamos temas como responsividade, estrutura de arquivos, acessibilidade e uso de ferramentas modernas como editores de código e emuladores de navegador. Ao final do curso, você será capaz de criar seu próprio site do zero e publicá-lo online. Além disso, você terá acesso a um fórum exclusivo para tirar dúvidas, feedback personalizado dos instrutores e um certificado digital reconhecido para enriquecer seu currículo ou portfólio. Não importa se você nunca escreveu uma linha de código antes, este curso foi criado justamente para quem está começando e quer aprender de forma objetiva, divertida e eficaz. Comece agora e dê o primeiro passo na carreira de desenvolvedor! </p>
 
-            <button class="font-medium rounded py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-900"> Saiba Mais </button>
+<body class="bg-zinc-950 text-white">
+  <header class="w-full bg-zinc-900 px-6 py-4">
+    <nav class="max-w-4xl mx-auto flex justify-between items-center">
+    
+      
 
-        </div>
-        <div class="p-6 bg-white rounded shadow border hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
-            <h3 class="text-xl text-indigo-900 font-bold mb-4">Fundamentos de UI/UX</h3>
+      <div class="hidden md:flex space-x-6 text-neutral-400">
+        <a href="#" class="hover:text-green-500">Estudos de Casos</a>
+        <a href="#" class="hover:text-green-500">Trabalhos</a>
+        <a href="#" class="hover:text-green-500">Entrar em Contato</a>
+      </div>
 
-            <p class="text-gray-700 mb-4">Este curso completo de UI/UX foi criado para quem deseja dominar o design de interfaces digitais e entender o comportamento dos usuários. Nele, você aprenderá os conceitos fundamentais de hierarquia visual, tipografia, espaçamento, cores e usabilidade. Através de aulas teóricas e projetos práticos, você irá desenvolver habilidades para criar interfaces bonitas, funcionais e centradas no usuário. O curso é ideal para designers iniciantes, desenvolvedores que querem melhorar o visual de suas aplicações ou profissionais de marketing digital que desejam entender o impacto do design na conversão. Cada módulo é estruturado para que você aplique o que aprendeu imediatamente, seja em wireframes, protótipos ou projetos reais. Você terá contato com ferramentas como Figma e Adobe XD, além de dicas sobre como montar um portfólio competitivo. Ao final, você receberá um certificado de conclusão e terá projetos prontos para mostrar em entrevistas ou apresentar a clientes. Com orientação especializada, exercícios guiados e acesso vitalício ao conteúdo, este curso é um investimento sólido para quem busca se destacar no mercado digital.</p>
+      <div class="flex items-center gap-4 text-white opacity-30 text-lg ">
+        <a href="#"><i class="fa-brands fa-linkedin-in hover:opacity-70"></i></a>
+        <a href="#"><i class="fa-brands fa-behance hover:opacity-70"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter hover:opacity-70"></i></a>
+      </div>
 
-            <button class="font-medium rounded py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-900"> Inscreva-se Já </button>
-        </div>
-        <div class="p-6 bg-white rounded shadow border hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
-            <h3 class="text-xl text-indigo-900 font-bold mb-4"> Lógica de Programação com JavaScript </h3>
+      <button id="menu-btn" class="md:hidden text-2xl text-white">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </button>
+    </nav>
 
-            <p class="text-gray-700 mb-4"> Se você quer aprender a pensar como um programador, este curso é o ponto de partida ideal. Nele, você vai desenvolver sua lógica de programação utilizando JavaScript, uma das linguagens mais populares do mundo. Aprenderá a trabalhar com variáveis, operadores, estruturas condicionais, laços de repetição, arrays, funções e objetos. Mas mais importante que decorar comandos, você vai entender por que cada estrutura existe e como aplicar o raciocínio para resolver problemas reais. Com exercícios interativos, desafios semanais e projetos práticos, você terá a oportunidade de testar seu conhecimento na prática e receber feedback. O curso também cobre conceitos como algoritmos, pseudocódigo e decomposição de problemas, tudo explicado de forma simples e objetiva. Ao final do curso, você terá uma base sólida para seguir aprendendo outras linguagens, como Python, Java ou até mesmo frameworks como React e Node.js. Ideal para iniciantes ou para quem sente que precisa reforçar os fundamentos, este curso vai te preparar para encarar qualquer desafio de lógica com confiança.
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 px-6 space-y-2">
+      <a href="#" class="text-sm hover:text-green-500">Estudos de Casos</a>
+      <a href="#" class="text-sm hover:text-green-500">Trabalhos</a>
+      <a href="#" class="text-sm hover:text-green-500">Entrar em Contato</a>
+    </div>
+  </header>
 
- </p>
+  <main class="max-w-4xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-12">
 
-            <button class="font-medium rounded py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-900">Iniciar Curso</button>
-        </div>
+
+    <figure class="w-80 h-80 relative order-2">
+      <img class="w-80 h-80 rounded-full absolute" src="img/fotoperfil.png" alt="Leticia Maciel">
+    </figure>
+
+ 
+    <section class="flex-1 flex flex-col gap-7">
+
+      <div class="flex flex-col gap-4">
+        <h1 class="text-5xl font-bold raleway">Leticia Maciel</h1>
+        <h2 class="text-2xl font-light raleway">UX e Dev Front-end</h2>
+      </div>
+
+    
+      <p class="text-neutral-400 text-sm leading-snug">
+        Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.
+      </p>
+
+    
+      <a href="#contato" class="bg-lime-700 px-8 py-4 rounded shadow-[0px_8px_30px_rgba(63,142,0,0.5)] outline outline-1 outline-lime-600 text-white text-base font-bold inline-flex items-center gap-2 w-fit hover:bg-lime-800 transition">
+        Vamos trabalhar juntos
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+      </a>
+
     </section>
+  </main>
+
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    <h4 class="text-lg font-semibold mb-4">Trabalhou em:</h4>
+
+    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <li><img src="assets/img/img-job-1.svg" alt="Job 1"></li>
+      <li><img src="assets/img/img-job-2.svg" alt="Job 2"></li>
+      <li><img src="assets/img/img-job-3.svg" alt="Job 3"></li>
+      <li><img src="assets/img/img-job-4.svg" alt="Job 4"></li>
+      <li><img src="assets/img/img-job-5.svg" alt="Job 5"></li>
+    </ul>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('menu-icon');
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+      });
+    });
+  </script>
+
 </body>
 </html>
-
-<!--
-Esses cards poderiam demostrar ofertas de cursos numa plataforma de ensino online (ex: Alura). Eles servem como componentes reutilizáveis para destacar informações de forma clara e interativa.
--->
