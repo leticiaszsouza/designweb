@@ -4,93 +4,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <title>Landinpage - Version 1.0</title>
+
 </head>
-<body class="bg-white">
+<body>
+<header class="container max-w-7xl mx-auto flex justify-between py-8 items-center">
+  <figure class="w-[200px]">
+    <img src="img/logo.png" alt="Logo de InfoWeb by turma InfoWebeti">
+  </figure>
+  <nav>
+    <menu class="flex gap-8 text-gray-500 items-center">
+      <li><a class="hover:text-sky-800 hover:font-semibold" href="#sobre">Sobre</a></li>
+      <li><a class="hover:text-sky-800 hover:font-semibold" href="#professores">Professores</a></li>
+      <li><a class="hover:text-sky-800 hover:font-semibold" href="#alunos">Alunos</a></li>
+      <li><a class="hover:text-sky-800 hover:font-semibold" href="#projetos">Projetos</a></li>
+      <li><button class="bg-sky-700 rounded p-2 hover:bg-sky-600 text-white" href="#documentos">Documentos</button></li>
+    </menu>
+  </nav>
+</header>
+<main class="container max-w-7xl mx-auto">
 
-  <header class="container max-w-7xl mx-auto flex justify-between px-4 mt-6">
+  <!-- hero -->
+  <section class="flex items-center flex-col p-20 bg-gray-100 rounded-lg ">
+    <h1 class="text-5xl max-w-140 font-semibold">Depois de muita espera, ela finalmente chegou!</h1>
+    <p class="my-10 max-w-140">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
 
-    <figure>
-      <img src="img/logo.png" alt="Logo de InfoWeb by turma InfoWebeti">
-    </figure>
-    <nav>
-      <menu class="flex gap-8 ">
-        <li class="text-gray-800 hover:bg-sky-400 rounded-lg py-2 px-4 "> <a href="#sobre">Sobre</a> </li>
-        <li class="text-gray-800 hover:bg-sky-700 rounded-lg py-2 px-4"> <a href="#professores">Professores</a> </li> 
-        <li class="text-gray-800 hover:bg-sky-700 rounded-lg py-2 px-4"> <a href="#alunos">Alunos</a></li>
-        <li class="text-gray-800 hover:bg-sky-700 rounded-lg py-2 px-4"> <a href="#projetos">Projetos</a></li>
-        <li class="text-white bg-sky-800 hover:bg-sky-600 rounded-lg py-2 px-4"><a href="#documentos">Documentos</a></li>
-      </menu>
-    </nav>
-  </header>
-  <main class="container mx-auto">
+    <div class="flex justify-center gap-4">
+      <a href="#" class="bg-sky-700 text-white py-4 px-8 rounded-sm hover:bg-sky-600">Ser feliz agora</a>
+      <a href="#" class="bg-sky-700 text-white py-4 px-8 rounded-sm hover:bg-sky-600">Ficar triste</a>
+    </div>
+  </section>
 
-    <!-- hero -->
-    <section class="bg-gray-600 m-10 p-10 flex justify-center flex-col text-center rounded-lg gap-8 w-auto">
-      <h1 class="text-4xl font-semibold">Depois de muita espera, <br> ela finalmente chegou!</h1>
-      <p class="text-lg px-75 font-normal text-gray-500 ">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
+  <!-- logos -->
+   <section>
+    <ul class="flex justify-between mt-10">
+      <li><img src="img/Brand Icon-3.svg" alt=""></li>
+      <li><img src="img/Brand Icon-4.svg" alt=""> </li>
+      <li><img src="img/Brand Icon-5.svg" alt=""></li>
+      <li><img src="img/Brand Icon-1.svg" alt=""></li>
+      <li><img src="img/Brand Icon.svg" alt=""></li>
+      <li><img src="img/Brand Icon-2.svg" alt=""></li>
+      <li><img src="img/Brand Icon-6.svg" alt=""></li>
 
-      <div class="text-center ">
-        <button href="#" class="w-40 h-16 text-white bg-sky-800 rounded-xl">Ser feliz agora</button>
+    </ul>
+   </section>
 
-        <button href="#" class="w-40 h-16 border border-sky-800 rounded-xl ">Ficar triste</button>
+  <!-- destaques -->
+   <section class="flex gap-20 my-20 text-gray-500">
+    <div class="flex gap-4 items-baseline border-b">
+      <i class="fa-solid fa-chevron-right text-sm"></i>
+      <div class=" ">
+        <strong class="text-gray-900">Ela é bonita</strong>
+        <p>Além de linda, ela é a mais top.</p>
       </div>
-    </section>
-
-    <!-- logos -->
-     <section>
-      <ul class="flex">       
-        <li><img src="img/Untitled_icon/Brand Icon-3.svg" alt=""></li> 
-        <li><img src="img/Untitled_icon/Brand Icon-4.svg" alt=""></li>
-        <li><img src="img/Untitled_icon/Brand Icon-1.svg" alt=""></li>
-        <li><img src="img/Untitled_icon/Brand Icon-2.svg" alt=""></li>
-        <li><img src="img/Untitled_icon/Brand Icon-5.svg" alt=""></li>
-        <li><img src="img/Untitled_icon/Brand Icon-6.svg" alt=""></li>
-        <li><img src="img/Untitled_icon/Brand Icon.svg" alt=""></li>
-
-   
-     
-      </ul>
-     </section>
-  
-    <!-- destaques -->
-     <section class="flex container max-w-7xl mx-auto justify-between px-4 gap-16">
-      <div class="p-6">
-        <h1 class="font-semibold">Ela é bonita</h1>
-        <span class="">Além de linda, ela é a mais top.</span>
-      </div>
-
-      <div class="p-6">
-        <h1>O azul destaque</h1>
-        <span>O azul royal ficou para trás. Contemple o novo azul esmeralda.</span>
-      </div>
-
-      <div class="p-6">
-        <h1>Webeti</h1>
-        <span>O nosso mascote é um gênio da informática.</span>
-      </div>
-     </section>
-     <!-- mockup da camiseta da turma -->
-     <figure><img src="img/Image Placeholder.png" alt=""></figure>
-     <h2>Alunos que já compraram.</h2>
-     <p>Junte-se aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
-
-     <!-- métricas -->
-     <section class="grid grid-cols-3 gap-4 text-center my-10">
+    </div>
+    
+    <div class="flex gap-4 items-baseline border-b">
+      <i class="fa-solid fa-chevron-right text-sm"></i>
       <div>
-        <h3 class="text-5xl">243+</h3>
-        <span>Alunos felizes</span>
+        <strong class="text-gray-900"> O azul destaque</strong>
+        <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
+        <div class=""> </div>
       </div>
+    </div>
+    <div class="flex gap-4 items-baseline border-b-3">
+      <i class="fa-solid fa-chevron-right text-sm"></i>
       <div>
-        <h3 class="text-5xl">38.3903+</h3>
-        <span>Alunos adquirindo</span>
+        <strong class="text-gray-900" >Webeti</strong>
+        <p>O nosso mascote é um gênio da informática.</p>
       </div>
-      <div>
-        <h3 class="text-5xl">154+</h3>
-        <span>Alunos tristes</span>
-      </div>
-     </section>
-  </main>
-  
+    </div>
+   </section>
+
+   <!-- mockup da camiseta da turma -->
+   <figure><img src="img/Image Placeholder.png" class="w-full" alt="Imagem destaque da camiseta"></figure>
+    <div class="flex items-center flex-col gap-4">
+      <h2 class = "text-4xl font-semibold mt-10">Alunos que já compraram.</h2>
+      <p class="max-w-100 text-gray-500">Junte-se aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
+    </div>
+   <!-- métricas -->
+   <section class="grid grid-cols-3 gap-4 text-center my-10">
+    <div>
+      <h3 class="text-5xl">143+</h3>
+      <span class="text-gray-500">Alunos felizes</span>
+    </div>
+    <div>
+      <h3 class="text-5xl">38.3903+</h3>
+      <span class="text-gray-500">Alunos adquirindo</span>
+    </div>
+    <div>
+      <h3 class="text-5xl">394+</h3>
+      <span class="text-gray-500">Alunos tristes</span>
+    </div>
+   </section>
+</main>
+
 </body>
 </html>
