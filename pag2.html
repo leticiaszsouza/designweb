@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Sora:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>Dashboard</title>
+  <style>
+    body { font-family: 'Sora', sans-serif; }
+  </style>
+</head>      
+<body>
+    <nav class="flex justify-between items-center p-4 border ">
+        <img src="img/Vector.png"> 
+        <div class="inline-flex justify-start items-center gap-2">
+            <img src="img/vector2.png"> 
+            <div class="inline-flex flex-col justify-center items-start">
+            <div class="justify-start text-neutral-800 text-xs font-bold">John Doe</div>
+            <div class="justify-start text-zinc-500 text-xs">Agência Web
+            </div>
+            </div>
+            </div>
+    </nav>
+    <div class="flex flex-cols">
+        <div class="flex flex-col w-64 gap-8 p-8 border border-stone-300 "> 
+            <h1 class="text-neutral-600 text-2xl font-semibold"> Canal do Cliente </h1>
+                <h2 class="flex gap-2 hover:text-sky-800 hover:font-semibold">
+                    <img src="img/Vector.svg">
+                        Loja de projetos </h2>
+                    <h3 class="px-8"> Dashboard </h3>
+                    <a class = "px-8 "href="pag2.html"> Compra de Créditos</a>
+                    <h3 class="px-8"> Concluidos </h3>
+                    <h2 class="flex gap-2 hover:text-sky-800"> 
+                    <img src="img/Vector (1).svg">
+                        Gestao de projetos </h2>
+                    <h2 class="flex gap-2 hover:text-sky-800"> 
+                    <img src="img/icon color.svg" alt="">
+                        Campanhas </h2>
+        </div>
+
+        <div>
+            <div class="border-b m-8">
+                <div class="flex ">
+                    <a href="#" class="underline "> Loja de Projetos > </a>
+                    <a href="#" class="underline"> Comprar Créditos > </a>
+                    <a href="#" class=""> Compra de Créditos </a>
+                </div>
+                <h1 class="justify-center text-black text-2xl font-semibold "> Compra de pontos base </h1>
+            </div>    
+            <div class="flex flex-cols gap-8">
+                <div class="w-[580px] h-64 bg-gray-200 rounded-lg ">
+                    <h1> Limite Mensal </h1>
+                    <p> Confira a quantidade de pontos disponível para compra </p>
+                    <div class="bg-blue-600 w-64 h-2"></div>
+                    <span> Comprado esse mês </span>
+                    <span> 100 créditos </span>
+                    <span> Seu limite mensal </span>
+                    <span> 2.000 créditos </span>
+                </div>
+                <div class="w-96 h-64 p-6 bg-gray-200 rounded-lg ">
+                    <h1 class="font-semibold text-lg "> Informações  </h1>
+                    <span class="flex gap-2 "> <img src="img/card.png"> Valor mínimo de <strong> 100 créditos </strong> </span>
+                    <span class="flex "> <img src="img/calendar.png"> Validade <strong> 24 meses </strong> </span>
+                    <span class="flex"> <img src="img/money.png"> Limite de compra mensal <strong> 2.000 créditos </strong> </span>
+                </div>
+            </div> 
+        <div class="w-auto h-64 bg-neutral-100 rounded-lg flex flex-cols gap-36 p-6 mt-10">
+            <div class="flex flex-col items-center gap-8">
+                <h1 class="font-semibold text-lg"> Quantidade de créditos para compra </h1>
+                <span class=" flex text-4xl font-semibold text-black gap-10">
+                    <img src="img/BD140-minus in a circle _ SYMBOLS, minus, reduce, less, quitar, reducir, menos.svg"> 
+                     100 
+                     <img src="img/BD130-add in a circle _ SYMBOLS, add, añadir, attach, adjuntar, include, incluir, plus, más, aumentar, increment, incrementar, more.svg ">
+                </span>
+                     
+                <span class="text-neutral-gray "> Digite o valor aproximado </span>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-lg"> Total em reais </span>
+                <span class="text-4xl"> R$20.000,00 </span>
+            </div>    
+        </div>
+        <div> 
+            <h1> Mais informações sobre o produto </h1>
+            <p> <strong> ATENÇÃO: </strong> A transferência dos pontos comprados para programas parceiros (Milhas) depende da elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir do menu Viagens - Programas Parceiros.</p>
+        </div>
+        <footer class="flex justify-between">
+            <button  class=" text-blue-800 font-bold "> Voltar </button>
+            <button class="w-56 border px-4 py-3 outline outline-1 border-blue-800 rounded font-semibold text-blue-800"> Adicionar ao carrinho </button>
+            <button class="w-56 bg-blue-800 px-4 py-3 rounded font-semibold text-white"> Continuar </button>
+        </footer>
+    </div>
+        
+</body>
