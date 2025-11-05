@@ -5,99 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Sora:wght@300;500;700&display=swap" rel="stylesheet" />
   <title>Dashboard</title>
   <style>
-    body { font-family: 'Raleway', sans-serif; }
+    body { font-family: 'Sora', sans-serif; }
   </style>
 </head>
-<body class="bg-gray-50">
-    <nav class="flex justify-between items-center p-4 border ">
+<body class=>
+    <header class="flex justify-between items-center p-4 border-b ">
         <img src="img/Vector.png"> 
         <div class="inline-flex justify-start items-center gap-2">
             <img src="img/vector2.png"> 
             <div class="inline-flex flex-col justify-center items-start">
-            <div class="justify-start text-neutral-800 text-xs font-bold">John Doe</div>
-            <div class="justify-start text-zinc-500 text-xs">Agência Web</div>
+                <div class="justify-start text-neutral-800 text-xs font-bold">John Doe</div>
+                <div class="justify-start text-zinc-500 text-xs">Agência Web</div>
             </div>
         </div>
-    </nav>
-    <div class="flex flex-cols">
-        <div class="flex flex-col w-64 gap-8 p-8 border border-stone-300 "> 
-            <h1 class="text-neutral-600 text-2xl font-semibold"> Canal do Cliente </h1>
-                <h2 class="flex gap-2 hover:text-sky-800 hover:font-semibold">
-                    <img src="img/Vector.svg">
-                     Loja de projetos </h2>
-                     <h3 class="px-8"> Dashboard </h3>
-                     <a class = "px-8 "href="pag2.html"> Compra de Créditos</a>
-                     <h3 class="px-8"> Concluidos </h3>
-                <h2 class="flex gap-2 hover:text-sky-800"> 
-                    <img src="img/Vector (1).svg">
-                    Gestao de projetos </h2>
-                <h2 class="flex gap-2 hover:text-sky-800"> 
-                    <img src="img/icon color.svg" alt="">
-                    Campanhas </h2>
-        </div>
+    </header>
+    <main class="flex flex-cols">
+            <nav class=" w-64 min-h-screen p-8 border-r border-stone-300"> 
+                <h1 class="text-neutral-500 text-lg font-semibold"> Canal do Cliente </h1>
 
-    <div class=""> 
-        <div class="p-10">
-            <img src="img/foto.png">
-            <h1 class="font-semibold mt-6 mb-4 text-xl">Compre pontos e distribua como quiser</h1>
+                <ul class="text-zinc-500 text-sm leading-5 py-8">
+                    <li class="flex gap-2 font-semibold"> <img src="img/Vector.svg"> Loja de projetos </li>
+                        <ul class="px-8 font-normal">
+                            <li class="hover:text-sky-800 hover:font-semibold my-6"> Dashboard </li>
+                            <li class="hover:text-sky-800 hover:font-semibold my-6"> <a href="creditos.html"> Compra de Créditos </a> </li>
+                            <li class="hover:text-sky-800 hover:font-semibold my-6"> Concluidos </li>
+                        </ul>
+                    <li class="flex gap-2 hover:font-semibold hover:text-sky-800 my-6"> <img src="img/Vector (1).svg"> Gestão de projetos </li>
+                    <li class="flex gap-2 hover:font-semibold hover:text-sky-800 my-6"> <img src="img/icon color.svg"> Campanhas </li>
+                </ul>
+            </nav>
 
-            <div class="flex flex-row gap-8 flex-wrap">
-                <div class="w-80 p-6 bg-white border border-zinc-200 flex flex-col rounded-lg shadow-sm">
-                    <div class="bg-black p-10 flex justify-center text-center rounded-lg">
-                        <h1 class="text-white text-2xl font-semibold">Design de App_</h1>
-                    </div>
-                    <div class="flex flex-col justify-between flex-1 mt-4">
-                        <p class="text-zinc-500 text-sm ">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.</p>
-                        <div class="mt-auto">
-                            <div class="flex justify-between self-strecht">
-                            <strong class="text-black inline-flex items-center gap-8">
-                                    Comprar Créditos <i class="fa-solid fa-chevron-right text-sm"></i>
+            <div class="p-10">
+                <img src="img/foto.png">
+                <h1 class="font-semibold mt-6 mb-4 text-xl">Compre pontos e distribua como quiser</h1>
+
+                <div class="flex flex-row gap-8 flex-wrap">
+
+                    <div class="flex flex-col w-80 h-[300px] p-6 bg-white border border-zinc-200 rounded-lg shadow-sm text-zinc-500 text-sm justify-between">
+                        <div class="w-64 h-24 bg-black p-8 flex justify-center rounded-lg">
+                            <span class="text-white text-lg font-semibold">Design de App_</span>
+                        </div>
+                        <p class="mt-4 flex-grow">
+                            Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem. 
+                        </p>
+
+                        <div class="flex flex-col mt-4 gap-2">
+                            <strong class="text-black inline-flex items-center gap-28">
+                            Comprar Créditos <i class="fa-solid fa-chevron-right"></i>
                             </strong>
-                            </div>
-                        <p class="text-zinc-500 mt-2">5 créditos por R$10.000,00</p>
+                            <span>5 créditos por R$10.000,00</span>
                         </div>
                     </div>
+
+
+                    <div class="flex flex-col w-80 h-[300px] p-6 bg-white border border-zinc-200 rounded-lg shadow-sm text-zinc-500 text-sm justify-between">
+                        <div class="w-64 h-24 bg-black p-8 flex justify-center rounded-lg">
+                            <span class="text-white text-lg font-semibold">Sistemas PVD_</span>
+                        </div>
+                        <p class="mt-4 flex-grow">
+                            Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto. 
+                        </p>
+
+                        <div class="flex flex-col mt-4 gap-2">
+                            <strong class="text-black inline-flex items-center gap-28">
+                            Comprar Créditos <i class="fa-solid fa-chevron-right"></i>
+                            </strong>
+                            <span>21 créditos por R$120.000,00</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-col w-80 h-[300px] p-6 bg-white border border-zinc-200 rounded-lg shadow-sm text-zinc-500 text-sm justify-between">
+                        <div class="w-64 h-24 bg-black p-8 flex justify-center rounded-lg">
+                            <span class="text-white text-lg font-semibold">Sites Wordpress</span>
+                        </div>
+                        <p class="mt-4 flex-grow">
+                            Descontos cumulativos para projetos em Wordpress para 2025.
+                        </p>
+
+                        <div class="flex flex-col mt-4 gap-2">
+                            <strong class="text-black inline-flex items-center gap-28">
+                            Comprar Créditos <i class="fa-solid fa-chevron-right"></i>
+                            </strong>
+                            <span>21 créditos por R$12.000,00</span>
+                        </div>
+                    </div>   
                 </div>
-
-                        <div class="w-80 p-6 bg-white border border-zinc-200 flex flex-col rounded-lg shadow-sm">
-                        <div class="bg-black p-10 flex justify-center text-center rounded-lg">
-                            <h1 class="text-white text-2xl font-semibold">Sistemas PDV_</h1>
-                        </div>
-                        <div class="flex flex-col justify-between flex-1 mt-4">
-                            <p class="text-zinc-500 text-sm">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.</p>
-                            <div class="mt-auto">
-                            <strong class="text-black inline-flex items-center gap-2">
-                                Comprar Créditos <i class="fa-solid fa-chevron-right text-sm"></i>
-                            </strong>
-                            <p class="text-zinc-500 mt-2">21 créditos por R$120.000,00</p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="w-80 p-6 bg-white border border-zinc-200 flex flex-col rounded-lg shadow-sm">
-                        <div class="bg-black p-10 flex justify-center text-center rounded-lg">
-                            <h1 class="text-white text-2xl font-semibold">Sites Wordpress</h1>
-                        </div>
-                        <div class="flex flex-col justify-between flex-1 mt-4">
-                            <p class="text-zinc-500 text-sm">Descontos cumulativos para projetos em Wordpress para 2025.</p>
-                            <div class="mt-auto">
-                            <strong class="text-black inline-flex items-center gap-2">
-                                Comprar Créditos <i class="fa-solid fa-chevron-right text-sm"></i>
-                            </strong>
-                            <p class="text-zinc-500 mt-2">21 créditos por R$12.000,00</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="max-w-auto  mt-80 px-14 py-4 bg-white border-t border-stone-300 flex justify-end items-center ">
-            <img class="w-28 h-4" src="img/Vector.png">
             </div>
-        </div>
-    </div>
-</div>
+    </main>
+
+    <footer class="flex items-center p-4 border-b max-w-auto px-14 py-4 bg-white border-t border-stone-300 flex justify-end items-center ">
+        <img class="w-28 h-4" src="img/Vector.png">
+    </footer>
 </body>
 </html>

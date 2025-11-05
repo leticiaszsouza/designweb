@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Sora:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>Dashboard</title>
+  <style>
+    body { font-family: 'Sora', sans-serif; }
+  </style>
+</head>
+<body class = "text-sm">
+    <header class="flex justify-between items-center p-4 border-b ">
+        <img src="img/Vector.png"> 
+        <div class="inline-flex justify-start items-center gap-2">
+            <img src="img/vector2.png"> 
+            <div class="inline-flex flex-col justify-center items-start">
+                <div class="justify-start text-neutral-800 text-xs font-bold">John Doe</div>
+                <div class="justify-start text-zinc-500 text-xs">Agência Web</div>
+            </div>
+        </div>
+    </header>
+    <main class="flex flex-cols">
+            <nav class=" w-64 min-h-screen p-8 border-r border-stone-300"> 
+                <h1 class="text-neutral-500 text-lg font-semibold"> Canal do Cliente </h1>
+
+                <ul class="text-zinc-500 leading-5 py-8">
+                    <li class="flex gap-2 font-semibold"> <img src="img/Vector.svg"> Loja de projetos </li>
+                        <ul class="px-8 font-normal">
+                            <li class="hover:text-sky-800 hover:font-semibold my-6"> Dashboard </li>
+                            <li class="hover:text-sky-800 hover:font-semibold my-6"> <a href="creditos.html"> Compra de Créditos </a> </li>
+                            <li class="hover:text-sky-800 hover:font-semibold my-6"> Concluidos </li>
+                        </ul>
+                    <li class="flex gap-2 hover:font-semibold hover:text-sky-800 my-6"> <img src="img/Vector (1).svg"> Gestão de projetos </li>
+                    <li class="flex gap-2 hover:font-semibold hover:text-sky-800 my-6"> <img src="img/icon color.svg"> Campanhas </li>
+                </ul>
+            </nav>
+
+            <div class="p-10">
+                <div class="border-b">
+                    <ul class="flex gap-2 text-neutral-500">
+                        <li class="underline "> Lista de Produtos > </li>
+                        <li class="underline"> Comprar Créditos > </li>
+                        <li> Compra de Créditos </li>
+                    </ul>
+                    <h1 class="font-semibold mt-6 mb-4 text-xl">Compra de pontos base</h1>
+                </div>
+
+                <div class="flex flex-row gap-8 flex-wrap mt-8">
+
+                    <div class="flex flex-col w-[584px] h-48 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm justify-between">
+                        <h1 class="text-lg font-semibold leading-8"> Limite mensal </h1>
+                        <p> Confira a quantidade de pontos disponível para compra </p>
+                        <div class="flex rounded-lg">
+                            <div class="bg-blue-800 w-64 h-2">  </div>
+                            <div class="bg-blue-300 h-2 w-28"> </div>
+                            <div class="bg-gray-300 h-2 w-64"> </div>
+                        </div>
+
+                        <div class="flex justify-between text-neutral-500">
+                            <span> Comprado esse mês</i> </span>
+                            <span> Seu limite mensal</span>
+                        </div>
+
+                        <div class="flex justify-between ">
+                            <strong> 100 créditos </strong>
+                            <strong> 2.000 créditos </strong>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col w-[410px] h-58 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm justify-between">
+                        <h1 class="text-lg font-semibold leading-8"> Informações </h1>
+                            <div class="flex gap-2"> <img src="img/card.png"> Valor mínimo de <strong> 100 créditos </strong> </div>
+                            <div class="flex gap-2"> <img src="img/calendar.png"> Validade <strong> 24 meses </strong></div>
+                            <div class="flex gap-2"> <img src="img/money.png"> Limite de compra mensal  <strong> 2.000 créditos </strong></div>
+                    </div>
+
+                    <div class="flex flex-cols gap-36 w-[1024px] h-48 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm ">
+                        <div class="flex items-center ">
+                            <h1> Quantidade de créditos para compra </h>
+                            <div class="flex "> <img src="img/BD140-minus in a circle _ SYMBOLS, minus, reduce, less, quitar, reducir, menos.svg"> 
+                                100 
+                            <img src="img/BD130-add in a circle _ SYMBOLS, add, añadir, attach, adjuntar, include, incluir, plus, más, aumentar, increment, incrementar, more.svg">
+                            </div>
+                            <span> Digite o valor aproximado </span>
+                        </div>
+                        <div>
+                            <h1> Total em reais</h1>
+                            <span> R$ 20.000,00</span>
+                        </div>
+                    </div>
+
+   
+                </div>
+            </div>
+    </main>
+
+    <footer class="flex items-center p-4 border-b max-w-auto px-14 py-4 bg-white border-t border-stone-300 flex justify-end items-center ">
+        <img class="w-28 h-4" src="img/Vector.png">
+    </footer>
+</body>
+</html>
