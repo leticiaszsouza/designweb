@@ -26,10 +26,10 @@
             <nav class=" w-64 min-h-screen p-8 border-r border-stone-300"> 
                 <h1 class="text-neutral-500 text-lg font-semibold"> Canal do Cliente </h1>
 
-                <ul class="text-zinc-500 leading-5 py-8">
+                <ul class="text-zinc-500 text-sm leading-5 py-8">
                     <li class="flex gap-2 font-semibold"> <img src="img/Vector.svg"> Loja de projetos </li>
                         <ul class="px-8 font-normal">
-                            <li class="hover:text-sky-800 hover:font-semibold my-6"> Dashboard </li>
+                            <li class="hover:text-sky-800 hover:font-semibold my-6"> <a href="index.html">Dashboard </a> </li>
                             <li class="hover:text-sky-800 hover:font-semibold my-6"> <a href="creditos.html"> Compra de Créditos </a> </li>
                             <li class="hover:text-sky-800 hover:font-semibold my-6"> Concluidos </li>
                         </ul>
@@ -38,67 +38,84 @@
                 </ul>
             </nav>
 
-            <div class="p-10">
-                <div class="border-b">
-                    <ul class="flex gap-2 text-neutral-500">
-                        <li class="underline "> Lista de Produtos > </li>
-                        <li class="underline"> Comprar Créditos > </li>
-                        <li> Compra de Créditos </li>
-                    </ul>
-                    <h1 class="font-semibold mt-6 mb-4 text-xl">Compra de pontos base</h1>
-                </div>
-
-                <div class="flex flex-row gap-8 flex-wrap mt-8">
-
-                    <div class="flex flex-col w-[584px] h-48 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm justify-between">
-                        <h1 class="text-lg font-semibold leading-8"> Limite mensal </h1>
-                        <p> Confira a quantidade de pontos disponível para compra </p>
-                        <div class="flex rounded-lg">
-                            <div class="bg-blue-800 w-64 h-2">  </div>
-                            <div class="bg-blue-300 h-2 w-28"> </div>
-                            <div class="bg-gray-300 h-2 w-64"> </div>
-                        </div>
-
-                        <div class="flex justify-between text-neutral-500">
-                            <span> Comprado esse mês</i> </span>
-                            <span> Seu limite mensal</span>
-                        </div>
-
-                        <div class="flex justify-between ">
-                            <strong> 100 créditos </strong>
-                            <strong> 2.000 créditos </strong>
-                        </div>
+            <section class="w-[1176px]">
+                <div class="p-10">
+                    <div class="border-b">
+                        <ul class="flex gap-2 text-neutral-500">
+                            <li class="underline "> Lista de Produtos > </li>
+                            <li class="underline"> Comprar Créditos > </li>
+                            <li> Compra de Créditos </li>
+                        </ul>
+                        <h1 class="font-semibold mt-6 mb-4 text-xl">Compra de pontos base</h1>
                     </div>
 
-                    <div class="flex flex-col w-[410px] h-58 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm justify-between">
-                        <h1 class="text-lg font-semibold leading-8"> Informações </h1>
-                            <div class="flex gap-2"> <img src="img/card.png"> Valor mínimo de <strong> 100 créditos </strong> </div>
-                            <div class="flex gap-2"> <img src="img/calendar.png"> Validade <strong> 24 meses </strong></div>
-                            <div class="flex gap-2"> <img src="img/money.png"> Limite de compra mensal  <strong> 2.000 créditos </strong></div>
-                    </div>
+                    <div class="flex flex-row gap-8 flex-wrap mt-8">
 
-                    <div class="flex flex-cols gap-36 w-[1024px] h-48 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm ">
-                        <div class="flex items-center ">
-                            <h1> Quantidade de créditos para compra </h>
-                            <div class="flex "> <img src="img/BD140-minus in a circle _ SYMBOLS, minus, reduce, less, quitar, reducir, menos.svg"> 
-                                100 
-                            <img src="img/BD130-add in a circle _ SYMBOLS, add, añadir, attach, adjuntar, include, incluir, plus, más, aumentar, increment, incrementar, more.svg">
+                        <div class="flex flex-col w-[584px] h-48 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm justify-between">
+                            <h1 class="text-lg font-semibold leading-8"> Limite mensal </h1>
+                            <p> Confira a quantidade de pontos disponível para compra </p>
+                            <div class="flex rounded-lg">
+                                <div class="bg-blue-800 w-64 h-2">  </div>
+                                <div class="bg-blue-300 h-2 w-28"> </div>
+                                <div class="bg-gray-300 h-2 w-64"> </div>
                             </div>
-                            <span> Digite o valor aproximado </span>
+
+                            <div class="flex justify-between text-neutral-500">
+                                <span> Comprado esse mês</i> </span>
+                                <span> Seu limite mensal</span>
+                            </div>
+
+                            <div class="flex justify-between ">
+                                <strong> 100 créditos </strong>
+                                <strong> 2.000 créditos </strong>
+                            </div>
                         </div>
-                        <div>
-                            <h1> Total em reais</h1>
-                            <span> R$ 20.000,00</span>
+
+                        <div class="flex flex-col w-[410px] h-58 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm justify-between">
+                            <h1 class="text-lg font-semibold leading-8"> Informações </h1>
+                                <div class="flex gap-2"> <img src="img/card.png"> Valor mínimo de <strong> 100 créditos </strong> </div>
+                                <div class="flex gap-2"> <img src="img/calendar.png"> Validade <strong> 24 meses </strong></div>
+                                <div class="flex gap-2"> <img src="img/money.png"> Limite de compra mensal  <strong> 2.000 créditos </strong></div>
+                        </div>
+
+                        <div class="flex flex-cols gap-36 w-[1024px] h-48 p-6 bg-neutral-100 border-zinc-200 rounded-lg shadow-sm text-black text-sm ">
+                            <div class="flex flex-col justify-between items-center">
+                                <h1 class="text-black text-lg font-semibold "> Quantidade de créditos para compra </h1>
+                                <div class="flex text-black text-2xl font-semibold gap-10 leading-5 border-b pb-4"> 
+                                    <img src="img/BD140-minus in a circle _ SYMBOLS, minus, reduce, less, quitar, reducir, menos.svg">
+                                    100
+                                    <img src="img/BD130-add in a circle _ SYMBOLS, add, añadir, attach, adjuntar, include, incluir, plus, más, aumentar, increment, incrementar, more.svg">
+                                </div>
+                                <span class="self-stretch text-center justify-center text-neutral-800 text-sm font-normal leading-5"> Digite o valor aproximado </span>
+                            </div>
+                            <div class="px-6 flex flex-col justify-start items-start gap-8 text-black font-bold">
+                                <h1 class=" text-lg font-semibold"> Total em reais </h1>
+                                <span class=" text-4xl"> R$20.000,00</span>
+                            </div>
+                        </div>
+
+                        <div>  
+                            <div class="border-b py-2"> <h1 class="font-semibold text-lg"> Mais informações sobre o produto  </h1> </div>
+                            <p class="py-4 w-[794px] text-neutral-500"> <strong class="text-black"> ATENÇÃO:</strong> A transferência dos pontos comprados para programas parceiros (Milhas) depende da elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir do menu Viagens - Programas Parceiros.</p>
                         </div>
                     </div>
-
-   
                 </div>
-            </div>
+                <div class="border-t flex justify-between p-4 mt-40">
+                    <button class="w-40 px-6 py-3 rounded text-blue-800 font-semibold">
+                                Voltar
+                    </button>
+                    <div class="flex gap-4">
+                        <button class="px-6 py-3 rounded-md outline outline-1 outline-blue-800 text-blue-800 font-semibold hover:bg-blue-50">
+                                Adicionar ao carrinho
+                        </button>
+                        <button class="px-6 py-3 rounded-md bg-blue-800 text-white font-semibold hover:bg-blue-900">
+                                Comprar agora
+                        </button>
+                    </div>
+                </div>
+            </section>
     </main>
 
-    <footer class="flex items-center p-4 border-b max-w-auto px-14 py-4 bg-white border-t border-stone-300 flex justify-end items-center ">
-        <img class="w-28 h-4" src="img/Vector.png">
-    </footer>
+    
 </body>
 </html>
