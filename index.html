@@ -4,106 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <title>Landinpage - Version 1.0</title>
 
 </head>
 <body>
 <header class="container max-w-7xl mx-auto flex justify-between py-8 items-center">
+
   <figure class="w-[200px]">
     <img src="img/logo.png" alt="Logo de InfoWeb by turma InfoWebeti">
   </figure>
+
   <nav>
-    <menu class="flex gap-8 text-gray-500 items-center">
-      <li><a class="btn btn-ghost hover:text-sky-900" href="#sobre">Sobre</a></li>
-      <li><a class="btn btn-ghost hover:text-sky-900" href="#professores">Professores</a></li>
-      <li><a class="btn btn-ghost hover:text-sky-900" href="#alunos">Alunos</a></li>
-      <li><a class="btn btn-ghost hover:text-sky-900" href="#projetos">Projetos</a></li>
-      <li><button class="btn bg-sky-700 rounded p-2 hover:bg-sky-600 text-white" href="#documentos">Documentos</button></li>
+    <menu class="md:hidden flex gap-8 text-gray-500 items-center">
+      <details class="collapse bg-base-100 ">
+        <summary class="collapse-title"> 
+          <i class="fa fa-bars text-3xl" aria-hidden="true"></i>  
+        </summary>
+        <div>
+          <li><a class="hover:bg-gray-200" href="#sobre">Sobre</a></li>
+          <li><a class="hover:bg-gray-200" href="#professores">Professores</a></li>
+          <li><a class="hover:bg-gray-200" href="#alunos">Alunos</a></li>
+          <li><a class="hover:bg-gray-200" href="#projetos">Projetos</a></li>
+          <li><a class="hover:bg-gray-200" href="#documentos">Documentos</a></li>
+        </div>
+         
     </menu>
+
+    <menu class="hidden md:flex gap-8 text-gray-500 items-center">
+        <li><a class="btn btn-ghost hover:text-sky-900" href="#sobre">Sobre</a></li>
+        <li><a class="btn btn-ghost hover:text-sky-900" href="#professores">Professores</a></li>
+        <li><a class="btn btn-ghost hover:text-sky-900" href="#alunos">Alunos</a></li>
+        <li><a class="btn btn-ghost hover:text-sky-900" href="#projetos">Projetos</a></li>
+        <li>
+          <button class="btn bg-sky-700 rounded p-2 hover:bg-sky-600 text-white" href="#documentos">Documentos</button>
+        </li>
+    </menu>
+
+  
   </nav>
 </header>
-<main class="container max-w-7xl mx-auto">
 
-  <!-- hero -->
-  <section class="flex items-center flex-col p-20 bg-gray-100 rounded-lg ">
-    <div class="hero bg-base-200 rounded">
+<main class="container max-w-7xl mx-auto">
+  <section>
+    <div class="hero bg-base-300 p-20 flex items-center flex-col bg-gray-100 ">
       <div class="hero-content text-center">
         <div class="max-w-md">
           <h1 class="text-4xl font-bold">Depois de muita espera, ela finalmente chegou!</h1>
           <p class="py-6">
-            O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!
+              O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!
           </p>
-          <button class="btn bg-sky-700 rounded p-3 hover:bg-sky-600 text-white "> Ser feliz agora</button>
-          <button class="btn bg-sky-700 rounded p-3 hover:bg-sky-600 text-white "> Ficar triste </button>
+            <button class="btn bg-sky-700 rounded p-3 hover:bg-sky-600 text-white w-34 "> Ser feliz agora</button>
+            <button class="btn btn-outline rounded  p-3 hover:bg-gray-200 w-34 text-sky-900 "> Ficar triste </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- logos -->
    <section>
-    <ul class="flex justify-between mt-10">
-      <li><img src="img/Brand Icon-3.svg" alt=""></li>
-      <li><img src="img/Brand Icon-4.svg" alt=""> </li>
-      <li><img src="img/Brand Icon-5.svg" alt=""></li>
-      <li><img src="img/Brand Icon-1.svg" alt=""></li>
-      <li><img src="img/Brand Icon.svg" alt=""></li>
-      <li><img src="img/Brand Icon-2.svg" alt=""></li>
-      <li><img src="img/Brand Icon-6.svg" alt=""></li>
+    <div class="flex justify-between my-10 md:flex md:flex-row gap-4 overflow-x-auto md:overflow-x-visible">      
+      <img src="img/Brand Icon-3.svg" class="flex-shrink-0 " alt="">
+      <img src="img/Brand Icon-4.svg" class="flex-shrink-0 " alt="">
+      <img src="img/Brand Icon-5.svg" class="flex-shrink-0 " alt="">
+      <img src="img/Brand Icon-1.svg" class="flex-shrink-0 " alt="">    
+      <img src="img/Brand Icon.svg" class="flex-shrink-0 " alt="">
+      <img src="img/Brand Icon-2.svg" class="flex-shrink-0 " alt="">
+      <img src="img/Brand Icon-6.svg" class="flex-shrink-0 " alt="">
+
+
+    </div>
+    
 
     </ul>
    </section>
 
   <!-- destaques -->
-   <section class="flex gap-20 my-20 text-gray-500">
-    <div class="flex gap-4 items-baseline hover:border-b-3 border-sky-700 py-2">
+  <section class="flex flex-col items-center md:flex-row gap-20 my-20">
+    <div class="flex gap-4 py-2 items-start w-full max-w-[300px]">
       <i class="fa-solid fa-chevron-right text-sm"></i>
-      <div class=" ">
-        <strong class="text-gray-900">Ela é bonita</strong>
+      <div>
+        <strong>Ela é bonita</strong>
         <p>Além de linda, ela é a mais top.</p>
       </div>
     </div>
-    
-    <div class="flex gap-4 items-baseline hover:border-b-3 border-sky-700 py-2">
-      <i class="fa-solid fa-chevron-right text-sm"></i>
+
+    <div class="flex gap-4 py-2 items-start w-full max-w-[300px]">
+      <i class="fa-solid fa-chevron-right  text-sm"></i>
       <div>
-        <strong class="text-gray-900"> O azul destaque</strong>
+        <strong>O azul destaque</strong>
         <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
-        <div class=""> </div>
       </div>
     </div>
 
-    <div class="flex gap-4 items-baseline hover:border-b-3 border-sky-700 py-2">
+    <div class="flex gap-4 py-2 items-start w-full max-w-[300px]">
       <i class="fa-solid fa-chevron-right text-sm"></i>
       <div>
-        <strong class="text-gray-900" >Webeti</strong>
+        <strong>Webeti </strong>
         <p>O nosso mascote é um gênio da informática.</p>
       </div>
     </div>
+
    </section>
 
    <!-- mockup da camiseta da turma -->
-   <figure class="">
-    <img src="img/Image Placeholder.png" class="w-full" alt="Imagem destaque da camiseta">
+   <figure>
+    <img src="img/Image Placeholder.png" class="w-full aspect-square md:aspect-auto object-cover" alt="Imagem destaque da camiseta">
   </figure>
 
-    <div class="flex items-center flex-col gap-4">
+    <div class="flex items-center text-center flex-col gap-4">
       <h2 class = "text-4xl font-semibold mt-10">Alunos que já compraram.</h2>
       <p class="max-w-100 text-gray-500">Junte-se aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
     </div>
    <!-- métricas -->
-   <section class="grid grid-cols-3 gap-4 text-center my-10">
+   <section class="flex flex-col md:grid grid-cols-3 gap-4 text-center my-10">
     <div>
-      <h3 class="text-5xl mb-4">143+</h3>
+      <h3 class="text-5xl font-semibold mb-4">143+</h3>
       <span class="text-gray-500">Alunos felizes</span>
     </div>
     <div>
-      <h3 class="text-5xl mb-4">38.3903+</h3>
+      <h3 class="text-5xl font-semibold mb-4">38.3903+</h3>
       <span class="text-gray-500">Alunos adquirindo</span>
     </div>
     <div>
-      <h3 class="text-5xl mb-4">394+</h3>
+      <h3 class="text-5xl font-semibold mb-4">394+</h3>
       <span class="text-gray-500">Alunos tristes</span>
     </div>
    </section>
