@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alpine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+<div x-data="{ aberto: false }" class="m-6 ">
+    <button @click="aberto = !aberto" class="btn ">
+        Menu
+    </button>
+
+    <ul x-show="aberto" @click.outside="aberto = false" x-transition class="border rounded">
+        <li>
+            <a href="#" >Link 1 </a>
+        </li>
+        <li>
+            <a href="#" >Link 2 </a>
+        </li>
+        <li>
+            <a href="#">Link 3 </a>
+        </li>
+    </ul>
+</div>
+</body>
+
+</html>
