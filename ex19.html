@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+<div x-data="{ cor: 'verde' }" class="flex justify-center items-center gap-6">
+    <p> Cor atual:
+        <strong  x-text="cor"
+            :class="{
+                'text-green-600': cor === 'verde',
+                'text-yellow-500': cor === 'amarelo',
+                'text-red-600': cor === 'vermelho'
+            }">
+        </strong>
+    </p>
+
+    <button @click="
+            cor === 'verde' ? cor = 'amarelo' :
+            cor === 'amarelo' ? cor = 'vermelho' :
+            cor = 'verde'"
+        class="btn "
+    >
+        Mudar
+    </button>
+</div>
+</body>
+</html>
