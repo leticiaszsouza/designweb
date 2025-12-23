@@ -20,7 +20,6 @@
                 <div class="flex justify-center items-center w-12 h-12 rounded-full bg-green-100 ">
                     <span class="text-green-600 font-bold text-2xl">$</span>
                 </div>
-
                 <h1 class="text-xl font-semibold text-gray-800">
                     Orçamento #001
                 </h1>
@@ -31,18 +30,20 @@
 
                 <input type="number" x-model.number="serviconovo.valor"  placeholder="Valor" class="input input-bordered   input-sm w-20">
 
-                <button @click="if (serviconovo.nome && serviconovo.valor) {servicos.push({ ...serviconovo });serviconovo.nome = '';serviconovo.valor = 0;}" class="btn btn-primary btn-sm">
-                    +
+                <button @click="if (serviconovo.nome && serviconovo.valor) {servicos.push({ ...serviconovo });serviconovo.nome = '';serviconovo.valor = 0;}" class="btn bg-pink-600 btn-sm text-white ">
+                    Add 
                 </button>
             </div>
             
             <ul class="space-y-1">
+                
                 <template x-for="(item, index) in servicos" :key="index">
                     <li class="flex justify-between items-center p-3 rounded-lg hover:bg-gray-100  transition duration-200">
                         <span x-text="item.nome" class="text-gray-700"></span>
                         <span x-text="'R$ ' + item.valor" class="text-gray-700 font-semibold"></span>
                     </li>
                 </template>
+                
             </ul>
         </div>
         
